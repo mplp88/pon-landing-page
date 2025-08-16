@@ -9,7 +9,7 @@
           <div
             class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent"
           >
-            {{ developerName }} - {{ tagline }}
+            {{ developerName }}
           </div>
           <div class="hidden md:flex space-x-8">
             <a
@@ -339,10 +339,15 @@
       </div>
     </footer>
   </div>
+  <ToastProvider />
 </template>
 
 <script setup>
 import { ref, reactive } from 'vue'
+import ToastProvider from '@/components/ToastProvider.vue'
+import { useToast } from '@/composables/useToast'
+
+const { addToast } = useToast()
 
 const mobileMenuOpen = ref(false)
 const isSubmitting = ref(false)
@@ -415,9 +420,11 @@ const submitForm = async () => {
     body: JSON.stringify(form),
   })
   if (!res.ok) {
-    alert(
-      `Error enviando el contacto. Por favor, intente más tarde o envíe un email a ${contactInfo.email}`,
-    )
+    addToast({
+      title: 'Error',
+      description: `Error enviando el contacto. Por favor, intente más tarde o envíe un email a ${contactInfo.email}`,
+      variant: 'destructive',
+    })
     console.error('Error submitting form:', res.statusText)
     isSubmitting.value = false
     return
@@ -430,7 +437,11 @@ const submitForm = async () => {
   })
 
   isSubmitting.value = false
-  alert('¡Mensaje enviado correctamente!')
+  addToast({
+    title: 'Éxito',
+    description: '¡Mensaje enviado correctamente!',
+    variant: 'success',
+  })
 }
 </script>
 
