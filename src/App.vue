@@ -348,7 +348,7 @@ const mobileMenuOpen = ref(false)
 const isSubmitting = ref(false)
 
 const developerName = ref('Martín Ponce')
-const tagline = ref('Desarrollador Full-Stack')
+const tagline = ref('Desarrollador Web')
 
 const contactInfo = reactive({
   email: 'martin@martinponce.com.ar',
