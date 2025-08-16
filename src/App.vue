@@ -9,7 +9,7 @@
           <div
             class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent"
           >
-            {{ developerName }} - {{ tagline }}
+            {{ developerName }}
           </div>
           <div class="hidden md:flex space-x-8">
             <a
