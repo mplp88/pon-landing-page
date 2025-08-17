@@ -263,7 +263,7 @@
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-blue-300">Location</h3>
+                <h3 class="text-lg font-semibold text-blue-300">Ubicación</h3>
                 <p class="text-slate-400">{{ contactInfo.location }}</p>
               </div>
             </div>
