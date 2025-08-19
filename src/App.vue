@@ -347,7 +347,7 @@ import { ref, reactive } from 'vue'
 import ToastProvider from '@/components/ToastProvider.vue'
 import { useToast } from '@/composables/useToast'
 
-const { addToast } = useToast()
+const { addToast, ToastVariant } = useToast()
 
 const mobileMenuOpen = ref(false)
 const isSubmitting = ref(false)
@@ -423,7 +423,7 @@ const submitForm = async () => {
     addToast({
       title: 'Error',
       description: `Error enviando el contacto. Por favor, intente más tarde o envíe un email a ${contactInfo.email}`,
-      variant: 'destructive',
+      variant: ToastVariant.destructive,
     })
     console.error('Error submitting form:', res.statusText)
     isSubmitting.value = false
@@ -440,7 +440,7 @@ const submitForm = async () => {
   addToast({
     title: 'Éxito',
     description: '¡Mensaje enviado correctamente!',
-    variant: 'success',
+    variant: ToastVariant.success,
   })
 }
 </script>
