@@ -240,6 +240,34 @@
               </div>
             </div>
 
+            <div class="space-y-8">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                  <svg
+                    class="w-6 h-6 text-blue-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.516 2.064a2 2 0 01-.45 1.91l-1.27 1.27a16 16 0 006.586 6.586l1.27-1.27a2 2 0 011.91-.45l2.064.516A2 2 0 0121 16.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-300">Teléfono / Whatsapp</h3>
+                  <p class="text-slate-400">
+                    <a :href="'http://wa.me/+549' + contactInfo.phone" target="_blank">{{
+                      contactInfo.phone
+                    }}</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div class="flex items-center gap-4">
               <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
                 <svg
@@ -347,7 +375,7 @@ import { ref, reactive } from 'vue'
 import ToastProvider from '@/components/ToastProvider.vue'
 import { useToast } from '@/composables/useToast'
 
-const { addToast } = useToast()
+const { addToast, ToastVariant } = useToast()
 
 const mobileMenuOpen = ref(false)
 const isSubmitting = ref(false)
@@ -358,6 +386,7 @@ const tagline = ref('Desarrollador Web')
 const contactInfo = reactive({
   email: 'martin@martinponce.com.ar',
   location: 'Buenos Aires, Argentina',
+  phone: '1165035037',
 })
 
 const projects = ref([
@@ -423,7 +452,7 @@ const submitForm = async () => {
     addToast({
       title: 'Error',
       description: `Error enviando el contacto. Por favor, intente más tarde o envíe un email a ${contactInfo.email}`,
-      variant: 'destructive',
+      variant: ToastVariant.destructive,
     })
     console.error('Error submitting form:', res.statusText)
     isSubmitting.value = false
@@ -440,7 +469,7 @@ const submitForm = async () => {
   addToast({
     title: 'Éxito',
     description: '¡Mensaje enviado correctamente!',
-    variant: 'success',
+    variant: ToastVariant.success,
   })
 }
 </script>
