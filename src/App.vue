@@ -81,20 +81,11 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="min-h-screen flex items-center justify-center relative overflow-hidden py-20"
+      class="min-h-screen flex items-center justify-center relative overflow-hidden py-16 md:py-20"
     >
-      <!-- Animated Background Elements -->
-      <div class="absolute inset-0">
-        <div
-          class="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"
-        ></div>
-        <div
-          class="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000"
-        ></div>
-      </div>
-
       <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-        <div class="mb-8">
+        <!-- Icon (oculto en mobile para ahorrar espacio) -->
+        <div class="hidden sm:block mb-8">
           <div
             class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 p-1"
           >
@@ -116,28 +107,47 @@
           </div>
         </div>
 
+        <!-- Title -->
         <h1
-          class="text-5xl md:text-7xl font-bold mb-8 leading-snug bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent"
+          class="text-4xl md:text-7xl font-bold mb-6 md:mb-8 leading-tight bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent"
         >
-          {{ developerName }}
+          {{ mainTitle }}
         </h1>
-        <p class="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
+
+        <!-- Tagline -->
+        <p class="text-lg md:text-2xl text-slate-300 mb-6 md:mb-8 leading-relaxed">
           {{ tagline }}
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+
+        <!-- SEO / ubicación -->
+        <p class="text-xs text-slate-400 mb-6">
+          {{ location }}
+        </p>
+
+        <!-- CTA -->
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
           <button
             @click="scrollTo('services')"
-            class="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all transform hover:scale-105"
+            class="px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all transform hover:scale-105"
           >
-            Mirá lo que hago
+            Ver cómo funciona
           </button>
-          <button
-            @click="scrollTo('contact')"
-            class="px-8 py-4 border-2 border-blue-500 rounded-lg font-semibold hover:bg-blue-500/10 transition-all"
+
+          <a
+            :href="
+              'https://wa.me/549' +
+              contactInfo.phone +
+              '?text=' +
+              encodeURIComponent('Hola! Vi tu página y me interesa tener una web para mi negocio.')
+            "
+            target="_blank"
+            class="px-6 py-3 md:px-8 md:py-4 border-2 border-blue-500 rounded-lg font-semibold hover:bg-blue-500/10 transition-all"
           >
-            Hablemos
-          </button>
+            Hablemos por WhatsApp
+          </a>
         </div>
+
+        <!-- Confianza -->
         <p class="text-sm text-slate-400 mt-4">Entrega en 72 hs • Sin complicaciones</p>
       </div>
     </section>
@@ -151,7 +161,10 @@
           >
             Servicios
           </h2>
-          <p class="text-xl text-slate-400">Estos son algunos de mis últimos trabajos</p>
+          <p class="text-xl text-slate-400">
+            Soluciones simples y efectivas para que tu negocio tenga presencia online y genere más
+            consultas
+          </p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -264,14 +277,15 @@
                   ></path>
                 </svg>
               </div>
-              <div>
-                <h3 class="text-lg font-semibold text-blue-300">Email</h3>
-                <p class="text-slate-400">
-                  <a :href="'mailto:' + contactInfo.email">{{ contactInfo.email }}</a>
-                </p>
-              </div>
+              <a :href="'mailto:' + contactInfo.email">
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-300">Email</h3>
+                  <p class="text-slate-400">
+                    {{ contactInfo.email }}
+                  </p>
+                </div>
+              </a>
             </div>
-
             <div class="space-y-8">
               <div class="flex items-center gap-4">
                 <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
@@ -289,14 +303,24 @@
                     ></path>
                   </svg>
                 </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-blue-300">Teléfono / Whatsapp</h3>
-                  <p class="text-slate-400">
-                    <a :href="'http://wa.me/+549' + contactInfo.phone" target="_blank">{{
-                      contactInfo.phone
-                    }}</a>
-                  </p>
-                </div>
+                <a
+                  :href="
+                    'https://wa.me/549' +
+                    contactInfo.phone +
+                    '?text=' +
+                    encodeURIComponent(
+                      'Hola! Vi tu página y me interesa tener una web para mi negocio.',
+                    )
+                  "
+                  target="_blank"
+                >
+                  <div>
+                    <h3 class="text-lg font-semibold text-blue-300">Teléfono / Whatsapp</h3>
+                    <p class="text-slate-400">
+                      {{ contactInfo.phone }}
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
 
@@ -327,21 +351,6 @@
                 <p class="text-slate-400">{{ contactInfo.location }}</p>
               </div>
             </div>
-            <!--
-              <div class="flex gap-4">
-                <a
-                v-for="social in socialLinks"
-                :key="social.name"
-                :href="social.url"
-                target="_blank"
-                class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-500/20 transition-colors"
-                >
-                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
-                  <path :d="social.icon"></path>
-                </svg>
-              </a>
-            </div>
-            -->
           </div>
 
           <!-- Contact Form -->
@@ -414,8 +423,9 @@ const mobileMenuOpen = ref(false)
 const isSubmitting = ref(false)
 
 const brandName = ref('Martín Ponce')
-const developerName = ref('Páginas Web para Negocios')
-const tagline = ref('WhatsApp, E-commerce y Desarrollo a Medida')
+const mainTitle = ref('Páginas Web para Negocios que Venden')
+const tagline = ref('Mostrá tus productos online y recibí consultas por WhatsApp en minutos')
+const location = ref('Desarrollo web para negocios en Buenos Aires, Argentina')
 
 const contactInfo = reactive({
   email: 'martin@martinponce.com.ar',
@@ -438,7 +448,7 @@ const services = ref([
     id: 1,
     title: 'Landing para ventas por WhatsApp',
     description:
-      'Ideal para negocios que quieren mostrar productos y recibir consultas directas. Entrega en 72hs',
+      'Ideal para negocios que quieren mostrar productos y recibir consultas directas. Entrega en 72hs.',
     price: 'Desde $130.000',
     type: 'landing',
     cta: {
@@ -550,23 +560,5 @@ const submitForm = async () => {
 
 html {
   scroll-behavior: smooth;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
-
-.animate-pulse {
-  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-.delay-1000 {
-  animation-delay: 1s;
 }
 </style>
