@@ -430,7 +430,7 @@ const location = ref('Desarrollo web para negocios en Buenos Aires, Argentina')
 const contactInfo = reactive({
   email: 'martin@martinponce.com.ar',
   location: 'Buenos Aires, Argentina',
-  phone: '1165035037',
+  phone: '1178293958',
 })
 
 const projects = ref([
