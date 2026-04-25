@@ -465,7 +465,7 @@ const services = ref([
     type: 'ecommerce',
     cta: {
       label: 'Consultar',
-      url: 'https://wa.me/5491165035037?text=Hola,%20quiero%20una%20tienda%20online',
+      url: `https://wa.me/${contactInfo.phone}?text=Hola,%20quiero%20una%20tienda%20online`,
     },
   },
   {
@@ -476,7 +476,7 @@ const services = ref([
     type: 'custom',
     cta: {
       label: 'Contame tu idea',
-      url: 'https://wa.me/5491165035037?text=Hola,%20tengo%20una%20idea%20para%20un%20sistema',
+      url: `https://wa.me/${contactInfo.phone}?text=Hola,%20tengo%20una%20idea%20para%20un%20sistema`,
     },
   },
 ])
