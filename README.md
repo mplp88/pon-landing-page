@@ -21,17 +21,20 @@ A modern, futuristic Vue.js single-page application (SPA) template designed for 
 ### Installation
 
 1. **Clone or download the project files**
+
 ```bash
 git clone pon-landing-page
 cd pon-landing-page
 ```
 
 2. **Install dependencies:**
+
 ```bash
 npm install
 ```
 
 3. **Start development server:**
+
 ```bash
 npm run dev
 ```
@@ -47,7 +50,9 @@ src/
 ## 🎨 Customization
 
 ### Personal Information
+
 Update the reactive data in `App.vue` to customize:
+
 - Developer name and title
 - Hero section description
 - Project showcase items
@@ -55,29 +60,34 @@ Update the reactive data in `App.vue` to customize:
 - Social media links
 
 ### Styling
+
 The template uses Tailwind CSS classes for all styling. Key design elements:
+
 - **Colors**: Blue and cyan gradients (`from-blue-600`, `to-cyan-500`)
 - **Animations**: Smooth transitions and hover effects
 - **Typography**: Clean, modern font hierarchy
 - **Layout**: Flexbox-based responsive design
 
 ### Projects Section
+
 Add your projects by updating the `projects` array:
+
 ```js
 const projects = ref([
   {
-    title: "Your Project Name",
-    description: "Project description...",
-    tech: ["Vue.js", "Tailwind CSS", "JavaScript"],
-    github: "https://github.com/username/repo",
-    demo: "https://your-demo-url.com"
-  }
+    title: 'Your Project Name',
+    description: 'Project description...',
+    tech: ['Vue.js', 'Tailwind CSS', 'JavaScript'],
+    github: 'https://github.com/username/repo',
+    demo: 'https://your-demo-url.com',
+  },
 ])
 ```
 
 ## 📱 Responsive Design
 
 The template is fully responsive with breakpoints:
+
 - **Mobile**: Base styles (default)
 - **Tablet**: `md:` prefix (768px+)
 - **Desktop**: `lg:` prefix (1024px+)
