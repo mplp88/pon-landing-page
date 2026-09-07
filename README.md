@@ -1,75 +1,103 @@
-# Nuxt Minimal Starter
+# Martín Ponce - Developer Landing Page
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern, futuristic Vue.js single-page application (SPA) template designed for web developers to showcase their portfolio professionally. Features a sleek blue color palette, smooth animations, and responsive design.
 
-## Setup
+## ✨ Features
 
-Make sure to install dependencies:
+- **Futuristic Design**: Modern gradient backgrounds, glowing effects, and smooth animations
+- **Professional Layout**: Clean sections for hero introduction, project showcase, and contact information
+- **Responsive Design**: Mobile-first approach that works seamlessly across all devices
+- **Vue 3 Composition API**: Built with modern Vue.js patterns and reactive data
+- **Interactive Elements**: Smooth scrolling navigation, hover effects, and functional contact form
+- **Blue Color Palette**: Professional blue and cyan color scheme with subtle gradients
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone or download the project files**
 
 ```bash
-# npm
+git clone pon-landing-page
+cd pon-landing-page
+```
+
+2. **Install dependencies:**
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+3. **Start development server:**
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## 📁 Project Structure
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```
+src/
+├── App.vue          # Main application component
+└── main.js          # Application entry point
 ```
 
-Locally preview production build:
+## 🎨 Customization
 
-```bash
-# npm
-npm run preview
+### Personal Information
 
-# pnpm
-pnpm preview
+Update the reactive data in `App.vue` to customize:
 
-# yarn
-yarn preview
+- Developer name and title
+- Hero section description
+- Project showcase items
+- Contact information
+- Social media links
 
-# bun
-bun run preview
+### Styling
+
+The template uses Tailwind CSS classes for all styling. Key design elements:
+
+- **Colors**: Blue and cyan gradients (`from-blue-600`, `to-cyan-500`)
+- **Animations**: Smooth transitions and hover effects
+- **Typography**: Clean, modern font hierarchy
+- **Layout**: Flexbox-based responsive design
+
+### Projects Section
+
+Add your projects by updating the `projects` array:
+
+```js
+const projects = ref([
+  {
+    title: 'Your Project Name',
+    description: 'Project description...',
+    tech: ['Vue.js', 'Tailwind CSS', 'JavaScript'],
+    github: 'https://github.com/username/repo',
+    demo: 'https://your-demo-url.com',
+  },
+])
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 📱 Responsive Design
+
+The template is fully responsive with breakpoints:
+
+- **Mobile**: Base styles (default)
+- **Tablet**: `md:` prefix (768px+)
+- **Desktop**: `lg:` prefix (1024px+)
+
+## 🛠️ Built With
+
+- **Vue.js 3** - Progressive JavaScript framework
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vite** - Fast build tool and development server
+
+## 📄 License
+
+This template has MIT license, free to use for personal and commercial projects.
