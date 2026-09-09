@@ -8,6 +8,14 @@ const contactInfo = reactive({
 const mainTitle = ref('Páginas Web para Negocios que Venden')
 const tagline = ref('Mostrá tus productos online y recibí consultas por WhatsApp en minutos')
 const location = ref('Desarrollo web para negocios en Buenos Aires, Argentina')
+
+const scrollTo = (elementId) => {
+  const element = document.getElementById(elementId)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+  mobileMenuOpen.value = false
+}
 </script>
 
 <template>
