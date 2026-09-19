@@ -41,7 +41,7 @@ export default {
         description:
           'Páginas de una sola sección diseñadas para presentar un producto, servicio o negocio y convertir visitas en consultas.',
         cta: 'Ver servicio',
-        url: '/es/services/landingpages',
+        url: '/es/services/landing-pages',
       },
 
       website: {
@@ -49,7 +49,7 @@ export default {
         description:
           'Una presencia online completa para empresas, profesionales y emprendimientos que necesitan mostrar quiénes son, qué ofrecen y cómo contactarlos.',
         cta: 'Ver servicio',
-        url: '/es/services/websites',
+        url: '/es/services/web-sites',
       },
 
       webapp: {
@@ -57,7 +57,7 @@ export default {
         description:
           'Sistemas y herramientas desarrollados específicamente para tu proyecto: paneles, automatizaciones, APIs, integraciones y aplicaciones web.',
         cta: 'Hablemos de tu proyecto',
-        url: '/es/services/webapps',
+        url: '/es/services/web-apps',
       },
     },
   },
@@ -163,5 +163,14 @@ export default {
       webapp:
         'Estoy preparando esta sección para contarte más sobre el desarrollo de Aplicaciones Web a Medida y las soluciones que puedo crear para tu proyecto.',
     },
+  },
+
+  seo: {
+    title: 'Desarrollo Web a Medida | Martín Ponce',
+    description:
+      'Desarrollo web a medida para negocios y profesionales: landing pages, sitios web y aplicaciones web modernas, rápidas y adaptadas a tu proyecto.',
+    ogTitle: 'Desarrollo Web a Medida | Martín Ponce',
+    ogDescription:
+      'Landing pages, sitios web profesionales y aplicaciones web desarrolladas a medida para tu proyecto.',
   },
 }

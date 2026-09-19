@@ -40,7 +40,7 @@ export default {
         description:
           'Single-page websites designed to showcase a product, service, or business and turn visitors into inquiries.',
         cta: 'View service',
-        url: '/services/landingpages',
+        url: '/services/landing-pages',
       },
 
       website: {
@@ -48,7 +48,7 @@ export default {
         description:
           'A complete online presence for businesses, professionals, and entrepreneurs who need to showcase who they are, what they offer, and how to get in touch.',
         cta: 'View service',
-        url: '/services/websites',
+        url: '/services/web-sites',
       },
 
       webapp: {
@@ -56,7 +56,7 @@ export default {
         description:
           'Systems and tools built specifically for your project, including dashboards, automation, APIs, integrations, and web applications.',
         cta: 'Let’s talk about your project',
-        url: '/services/webapps',
+        url: '/services/web-apps',
       },
     },
   },
@@ -159,5 +159,14 @@ export default {
       webapp:
         'I’m preparing this section with more information about Custom Web Applications and the solutions I can build for your project.',
     },
+  },
+
+  seo: {
+    title: 'Custom Web Development | Martín Ponce',
+    description:
+      'Custom web development for businesses and professionals: landing pages, professional websites, and web applications built around your project.',
+    ogTitle: 'Custom Web Development | Martín Ponce',
+    ogDescription:
+      'Landing pages, professional websites, and custom web applications built around your project.',
   },
 }

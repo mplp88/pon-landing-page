@@ -6,50 +6,34 @@
 </template>
 
 <script setup lang="ts">
-useHead({
+const { t } = useI18n()
+const route = useRoute()
+const i18nHead = useLocaleHead()
+
+useHead(() => ({
+  htmlAttrs: {
+    lang: i18nHead.value.htmlAttrs.lang,
+  },
+
   link: [
     {
       rel: 'icon',
       href: '/favicon.png',
     },
-    {
-      rel: 'canonical',
-      href: 'https://martinponce.com.ar/',
-    },
+    ...(i18nHead.value.link || []),
   ],
 
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Creación de páginas web para negocios con botón directo a WhatsApp. Ideal para locales y emprendimientos. Entrega rápida.',
-    },
-    {
-      property: 'og:title',
-      content: 'Páginas Web para Negocios con WhatsApp',
-    },
-    {
-      property: 'og:description',
-      content: 'Landing pages simples para vender más por WhatsApp.',
-    },
-    {
-      property: 'og:image',
-      content: 'https://martinponce.com.ar/preview.jpg',
-    },
-    {
-      property: 'og:url',
-      content: 'https://martinponce.com.ar/',
-    },
-    {
-      property: 'og:type',
-      content: 'website',
-    },
-    {
-      name: 'twitter:card',
-      content: 'summary_large_image',
-    },
-  ],
+  meta: [...(i18nHead.value.meta || [])],
+}))
 
-  title: 'Páginas Web para Negocios | Landing con WhatsApp',
+useSeoMeta({
+  title: () => t('seo.title'),
+  description: () => t('seo.description'),
+
+  ogTitle: () => t('seo.ogTitle'),
+  ogDescription: () => t('seo.ogDescription'),
+  ogImage: 'https://martinponce.com.ar/preview.jpg',
+  ogUrl: () => `https://martinponce.com.ar${route.path}`,
+  ogType: 'website',
 })
 </script>
