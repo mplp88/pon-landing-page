@@ -7,6 +7,8 @@
 
       <ServicesSection></ServicesSection>
 
+      <AboutSection></AboutSection>
+
       <ProjectsSection></ProjectsSection>
 
       <ContactSection></ContactSection>
