@@ -10,7 +10,7 @@ useHead({
   link: [
     {
       rel: 'icon',
-      href: '/favicon.ico',
+      href: '/favicon.png',
     },
     {
       rel: 'canonical',
