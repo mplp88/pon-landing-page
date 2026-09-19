@@ -1,67 +1,88 @@
-<script setup>
-const projects = ref([
+<script setup lang="ts">
+const { t } = useI18n()
+
+const projects = [
   {
-    id: 1,
-    title: 'Maternidad y emociones',
-    description: 'Página web profesional para presentación y publicación de entradas de blog.',
+    id: 'maternidad',
+    title: 'Maternidad y Emociones',
+    descriptionKey: 'maternity',
     image: '/images/maternidad-y-emociones.png',
     liveUrl: 'https://maternidadyemociones.com.ar',
   },
-])
+]
 </script>
 
 <template>
-  <!-- Projects Section -->
-  <section id="projects" class="min-h-screen py-20 relative">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2
-          class="text-4xl md:text-5xl font-bold pb-4 bg-linear-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent"
+  <section id="projects" class="relative px-6 py-24">
+    <div class="mx-auto max-w-6xl">
+      <!-- Section heading -->
+      <div class="mx-auto mb-14 max-w-3xl text-center">
+        <span
+          class="mb-3 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400"
         >
-          Proyectos Destacados
+          {{ t('projects.eyebrow') }}
+        </span>
+
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+          {{ t('projects.title') }}
         </h2>
-        <p class="text-xl text-slate-400">Estos son algunos de mis últimos trabajos</p>
+
+        <p class="mt-5 text-base leading-7 text-slate-300 sm:text-lg">
+          {{ t('projects.description') }}
+        </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div
+      <!-- Projects -->
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <article
           v-for="project in projects"
           :key="project.id"
-          class="group bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
+          class="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.07]"
         >
-          <div
-            class="aspect-video bg-linear-to-br from-blue-900 to-slate-800 rounded-lg mb-4 flex items-center justify-center overflow-hidden"
-          >
+          <!-- Image -->
+          <div class="aspect-video overflow-hidden">
             <img
               :src="project.image"
               :alt="project.title"
-              class="w-full h-full object-cover rounded-lg"
+              class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
             />
           </div>
-          <h3 class="text-xl font-bold mb-2 text-blue-300">
-            {{ project.title }}
-          </h3>
-          <p class="text-slate-400 mb-4 leading-relaxed">
-            {{ project.description }}
-          </p>
-          <div class="flex gap-4">
-            <NuxtLink
+
+          <!-- Content -->
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-white">
+              {{ project.title }}
+            </h3>
+
+            <p class="mt-3 text-sm leading-6 text-slate-300">
+              {{ t(`projects.items.${project.descriptionKey}`) }}
+            </p>
+
+            <!-- CTA -->
+            <a
               :href="project.liveUrl"
               target="_blank"
-              class="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+              rel="noopener noreferrer"
+              class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-cyan-400 transition-colors hover:text-cyan-300"
             >
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {{ t('projects.viewProject') }}
+
+              <svg
+                class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
                   d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                ></path>
+                />
               </svg>
-              Página web
-            </NuxtLink>
+            </a>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>

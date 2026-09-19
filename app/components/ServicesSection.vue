@@ -1,91 +1,88 @@
-<script setup>
-const contactInfo = reactive({
-  email: 'martin@martinponce.com.ar',
-  location: 'Buenos Aires, Argentina',
-  phone: '1178293958',
-})
+<script setup lang="ts">
+import { Rocket, Globe, Settings, ArrowRight } from 'lucide-vue-next'
 
-const services = ref([
+const { t } = useI18n()
+
+const services = [
   {
-    id: 1,
-    title: 'Landing para ventas por WhatsApp',
-    description:
-      'Ideal para negocios que quieren mostrar productos y recibir consultas directas. Entrega en 72hs.',
-    price: 'Desde $130.000',
-    type: 'landing',
-    cta: {
-      label: 'Ver demo',
-      url: 'https://demo-landing.martinponce.com.ar',
-    },
-    highlight: true,
+    id: 'landing',
+    icon: Rocket,
   },
   {
-    id: 2,
-    title: 'Tienda online (E-commerce)',
-    description: 'Vendé tus productos con carrito de compras y medios de pago integrados.',
-    price: 'Desde $300.000',
-    type: 'ecommerce',
-    cta: {
-      label: 'Consultar',
-      url: `https://wa.me/549${contactInfo.phone}?text=Hola,%20quiero%20una%20tienda%20online`,
-    },
+    id: 'website',
+    icon: Globe,
   },
   {
-    id: 3,
-    title: 'Desarrollo a medida',
-    description: 'Sistemas personalizados, automatización e integraciones según tu negocio.',
-    price: 'A medida',
-    type: 'custom',
-    cta: {
-      label: 'Contame tu idea',
-      url: `https://wa.me/549${contactInfo.phone}?text=Hola,%20tengo%20una%20idea%20para%20un%20sistema`,
-    },
+    id: 'webapp',
+    icon: Settings,
   },
-])
+]
 </script>
 
 <template>
-  <!-- Services Section -->
-  <section id="services" class="min-h-screen py-20 relative">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2
-          class="text-4xl md:text-5xl font-bold pb-4 bg-linear-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent"
+  <section id="services" class="relative px-6 py-24">
+    <div class="mx-auto max-w-6xl">
+      <!-- Section heading -->
+      <div class="mx-auto mb-14 max-w-3xl text-center">
+        <span
+          class="mb-3 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400"
         >
-          Servicios
+          {{ t('services.eyebrow') }}
+        </span>
+
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+          {{ t('services.title') }}
         </h2>
-        <p class="text-xl text-slate-400">
-          Soluciones simples y efectivas para que tu negocio tenga presencia online y genere más
-          consultas
+
+        <p class="mt-5 text-base leading-7 text-slate-300 sm:text-lg">
+          {{ t('services.description') }}
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <a
-          :href="service.cta.url"
-          target="_blank"
+      <!-- Services -->
+      <div class="grid gap-6 md:grid-cols-3">
+        <NuxtLink
           v-for="service in services"
           :key="service.id"
-          :class="[
-            'group bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border transition-all duration-300 hover:scale-105',
-            service.highlight ? 'border-blue-500 shadow-lg scale-105' : 'border-slate-700',
-          ]"
+          :to="t(`services.cards.${service.id}.url`)"
+          class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-cyan-400/30 hover:bg-white/[0.07]"
         >
-          <h3 class="text-xl font-bold mb-2 text-blue-300">
-            {{ service.title }}
-          </h3>
-          <p class="text-slate-400 mb-4 leading-relaxed">
-            {{ service.description }}
-          </p>
-          <p class="text-lg font-semibold text-white">{{ service.price }}</p>
-          <div class="flex gap-4">
-            <span
-              class="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+          <!-- Decorative glow -->
+          <div
+            class="pointer-events-none absolute -right-16 -top-16 h-32 w-32 rounded-full bg-cyan-400/10 blur-3xl transition duration-300 group-hover:bg-cyan-400/20"
+          ></div>
+
+          <div class="relative">
+            <!-- Icon -->
+            <div
+              class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-cyan-400"
             >
-              {{ service.cta.label }}
-            </span>
+              <component :is="service.icon" class="h-7 w-7" :stroke-width="1.8" />
+            </div>
+
+            <!-- Content -->
+            <h3 class="text-xl font-semibold text-white">
+              {{ t(`services.cards.${service.id}.title`) }}
+            </h3>
+
+            <p class="mt-3 text-sm leading-6 text-slate-300">
+              {{ t(`services.cards.${service.id}.description`) }}
+            </p>
+
+            <!-- CTA -->
+            <div
+              class="mt-6 flex items-center gap-2 text-sm font-semibold text-cyan-400 transition-colors group-hover:text-cyan-300"
+            >
+              {{ t(`services.cards.${service.id}.cta`) }}
+
+              <span class="transition-transform duration-300 group-hover:translate-x-1"
+                ><ArrowRight
+                  class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                />
+              </span>
+            </div>
           </div>
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </section>
