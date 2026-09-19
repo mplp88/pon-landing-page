@@ -24,6 +24,7 @@ export default defineNuxtConfig({
         file: 'en.ts',
       },
     ],
+    baseUrl: 'https://martinponce.com.ar',
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
     langDir: 'locales/',
