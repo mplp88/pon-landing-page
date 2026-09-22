@@ -166,11 +166,208 @@ export default {
   },
 
   seo: {
-    title: 'Desarrollo Web a Medida | Martín Ponce',
+    title: 'Desarrollo Web a Medida \\| Martín Ponce',
     description:
       'Desarrollo web a medida para negocios y profesionales: landing pages, sitios web y aplicaciones web modernas, rápidas y adaptadas a tu proyecto.',
-    ogTitle: 'Desarrollo Web a Medida | Martín Ponce',
+    ogTitle: 'Desarrollo Web a Medida \\| Martín Ponce',
     ogDescription:
       'Landing pages, sitios web profesionales y aplicaciones web desarrolladas a medida para tu proyecto.',
+    landing: {
+      title: 'Landing Pages \\| Desarrollo Web a Medida \\| Martín Ponce',
+      description:
+        'Diseño y desarrollo de Landing Pages rápidas, modernas y responsive para negocios, profesionales, productos y servicios.',
+      ogTitle: 'Landing Pages \\| Martín Ponce',
+      ogDescription:
+        'Landing Pages modernas y adaptadas a tu proyecto, con diseño responsive, contacto, WhatsApp y SEO básico.',
+    },
+  },
+
+  landing: {
+    eyebrow: 'Landing Pages',
+
+    hero: {
+      title: {
+        before: 'Una landing page pensada para ',
+        highlight: 'hacer crecer tu proyecto.',
+      },
+      description:
+        'Una página rápida, moderna y responsive diseñada para presentar tu producto o servicio con claridad y convertir visitas en potenciales clientes.',
+      cta: 'Hablemos de tu proyecto',
+      examples: 'Ver ejemplos',
+    },
+
+    about: {
+      eyebrow: '¿Qué es una Landing Page?',
+      title: 'Todo lo que tu cliente necesita para dar el siguiente paso.',
+      description:
+        'Una Landing Page es un sitio web enfocado en un objetivo concreto: presentar un producto, servicio, negocio o campaña de forma clara y atractiva.',
+      description2:
+        'En lugar de sobrecargar al visitante con información, la página lo guía hacia una acción concreta: contactarte, pedir un presupuesto, realizar una compra o conocer más sobre lo que ofrecés.',
+
+      features: {
+        fast: {
+          title: 'Rápida',
+          description: 'Optimizada para cargar rápido y ofrecer una navegación fluida.',
+        },
+        responsive: {
+          title: 'Responsive',
+          description: 'Adaptada para celulares, tablets y computadoras.',
+        },
+        seo: {
+          title: 'Preparada para SEO',
+          description: 'Una base técnica sólida para que los buscadores puedan entenderla.',
+        },
+        contact: {
+          title: 'Contacto fácil',
+          description: 'WhatsApp, formularios, redes sociales y otras opciones de contacto.',
+        },
+      },
+    },
+
+    includes: {
+      eyebrow: 'Qué puede incluir',
+      title: 'Todo lo necesario para publicar',
+      description:
+        'El alcance exacto depende de cada proyecto, pero una Landing Page puede incluir todo lo necesario para empezar a presentar tu negocio online.',
+
+      items: {
+        design: {
+          title: 'Diseño personalizado',
+          description: 'Una identidad visual adaptada a tu negocio y a tu público.',
+        },
+        responsive: {
+          title: 'Diseño responsive',
+          description: 'Una estructura adaptada a diferentes tamaños de pantalla.',
+        },
+        content: {
+          title: 'Secciones de contenido',
+          description: 'Servicios, productos, beneficios, nosotros, testimonios y más.',
+        },
+        whatsapp: {
+          title: 'Integración con WhatsApp',
+          description:
+            'Un botón de contacto directo para que tus clientes puedan escribirte fácilmente.',
+        },
+        forms: {
+          title: 'Formularios de contacto',
+          description: 'Formularios para recibir consultas directamente por email.',
+        },
+        seo: {
+          title: 'SEO básico',
+          description: 'Metadatos y estructura técnica preparados para buscadores.',
+        },
+        social: {
+          title: 'Redes sociales',
+          description: 'Links a Instagram, Facebook, TikTok y otras plataformas.',
+        },
+        deployment: {
+          title: 'Publicación',
+          description:
+            'Puedo encargarme de publicar el sitio y realizar la configuración necesaria.',
+        },
+        domain: {
+          title: 'Dominio y hosting',
+          description: 'Asistencia para configurar los servicios técnicos que necesites.',
+        },
+      },
+    },
+
+    audience: {
+      eyebrow: '¿Es para vos?',
+      title: 'Un buen punto de partida para muchos proyectos.',
+      description:
+        'Una Landing Page puede ser suficiente para tener presencia online sin la complejidad de un sitio web más grande.',
+
+      items: {
+        businesses: 'Pequeños negocios y comercios',
+        professionals: 'Profesionales independientes y freelancers',
+        products: 'Productos, servicios y nuevos emprendimientos',
+        campaigns: 'Campañas publicitarias y promociones puntuales',
+      },
+    },
+
+    examples: {
+      eyebrow: 'Ejemplos',
+      title: 'Mirá cómo podría verse una Landing Page',
+      description:
+        'Estos ejemplos muestran distintas formas de adaptar una Landing Page a un tipo de negocio específico.',
+
+      items: {
+        barber: {
+          title: 'Barbería',
+          url: 'demo / barber-shop',
+          previewTitle: 'Tu próximo corte empieza acá.',
+          description:
+            'Una Landing Page enfocada en una barbería, con servicios, precios, ubicación y un botón directo para reservar por WhatsApp.',
+          previewCta: 'Ver demo',
+        },
+        restaurant: {
+          title: 'Restaurante',
+          url: 'demo / restaurant',
+          previewTitle: 'Buena comida, a un clic.',
+          description:
+            'Una Landing Page enfocada en mostrar un restaurante, su menú, ubicación y las opciones para realizar un pedido.',
+          previewCta: 'Ver demo',
+        },
+        professional: {
+          title: 'Profesional',
+          url: 'demo / professional',
+          previewTitle: 'Presentá tus servicios profesionales.',
+          description:
+            'Una página limpia y profesional para mostrar servicios, experiencia e información de contacto.',
+          previewCta: 'Ver demo',
+        },
+      },
+    },
+
+    process: {
+      eyebrow: 'Cómo trabajo',
+      title: 'De la idea a la web publicada.',
+
+      steps: {
+        discuss: {
+          title: 'Hablamos',
+          description: 'Conversamos sobre tu negocio, tus objetivos y lo que necesitás.',
+        },
+        define: {
+          title: 'Definimos',
+          description: 'Decidimos la estructura, el contenido y las funcionalidades de la página.',
+        },
+        develop: {
+          title: 'Desarrollo',
+          description: 'Diseño y desarrollo la página y la adapto según tus comentarios.',
+        },
+        launch: {
+          title: 'Publicamos',
+          description: 'Publico el sitio y te ayudo con la configuración técnica final.',
+        },
+      },
+    },
+
+    cta: {
+      title: '¿Tenés un proyecto en mente?',
+      description:
+        'Contame un poco sobre tu negocio y qué necesitás. Podemos analizar juntos cuál es la mejor forma de desarrollar tu Landing Page.',
+      button: 'Hablemos de tu proyecto',
+    },
+
+    otherServices: {
+      eyebrow: '¿Necesitás algo más?',
+      title: 'Tu proyecto puede crecer desde acá.',
+
+      website: {
+        title: 'Sitios Web Profesionales',
+        description:
+          'Para negocios que necesitan varias páginas, más contenido o una presencia online completa.',
+      },
+
+      webapp: {
+        title: 'Aplicaciones Web a Medida',
+        description:
+          'Para proyectos que necesitan funcionalidades personalizadas, sistemas, paneles, integraciones o automatizaciones.',
+      },
+
+      view: 'Ver servicio',
+    },
   },
 }

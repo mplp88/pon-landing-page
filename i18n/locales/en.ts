@@ -162,11 +162,206 @@ export default {
   },
 
   seo: {
-    title: 'Custom Web Development | Martín Ponce',
+    title: 'Custom Web Development \\| Martín Ponce',
     description:
       'Custom web development for businesses and professionals: landing pages, professional websites, and web applications built around your project.',
-    ogTitle: 'Custom Web Development | Martín Ponce',
+    ogTitle: 'Custom Web Development \\| Martín Ponce',
     ogDescription:
       'Landing pages, professional websites, and custom web applications built around your project.',
+    landing: {
+      title: 'Landing Pages \\\| Desarrollo Web a Medida \\\| Martín Ponce',
+      description:
+        'Diseño y desarrollo de Landing Pages rápidas, modernas y responsive para negocios, profesionales, productos y servicios.',
+      ogTitle: 'Landing Pages \\| Martín Ponce',
+      ogDescription:
+        'Landing Pages modernas y adaptadas a tu proyecto, con diseño responsive, contacto, WhatsApp y SEO básico.',
+    },
+  },
+
+  landing: {
+    eyebrow: 'Landing Pages',
+
+    hero: {
+      title: {
+        before: 'A landing page designed to ',
+        highlight: 'get your business noticed.',
+      },
+      description:
+        'A fast, modern, responsive page designed to present your product or service clearly and turn visitors into potential customers.',
+      cta: 'Let’s talk about your project',
+      examples: 'See examples',
+    },
+
+    about: {
+      eyebrow: 'What is a Landing Page?',
+      title: 'Everything your customer needs to take the next step.',
+      description:
+        'A Landing Page is a focused website built around a specific goal: presenting a product, service, business, or campaign in a clear and compelling way.',
+      description2:
+        'Instead of overwhelming visitors with information, the page guides them toward a specific action — contacting you, requesting a quote, making a purchase, or learning more.',
+
+      features: {
+        fast: {
+          title: 'Fast',
+          description: 'Optimized for quick loading and a smooth browsing experience.',
+        },
+        responsive: {
+          title: 'Responsive',
+          description: 'Designed to work properly on phones, tablets, and computers.',
+        },
+        seo: {
+          title: 'SEO ready',
+          description: 'Built with a solid technical foundation for search engines.',
+        },
+        contact: {
+          title: 'Easy to contact',
+          description: 'WhatsApp, forms, social networks, and other contact options.',
+        },
+      },
+    },
+
+    includes: {
+      eyebrow: 'What’s included',
+      title: 'Everything needed to launch',
+      description:
+        'The exact scope can vary depending on your project, but a Landing Page can include everything you need to start presenting your business online.',
+
+      items: {
+        design: {
+          title: 'Custom design',
+          description: 'A visual identity adapted to your business and audience.',
+        },
+        responsive: {
+          title: 'Responsive layout',
+          description: 'A layout adapted to different screen sizes.',
+        },
+        content: {
+          title: 'Content sections',
+          description: 'Services, products, benefits, about, testimonials, and more.',
+        },
+        whatsapp: {
+          title: 'WhatsApp integration',
+          description: 'A direct contact button so customers can reach you easily.',
+        },
+        forms: {
+          title: 'Contact forms',
+          description: 'Forms to receive inquiries directly by email.',
+        },
+        seo: {
+          title: 'Basic SEO',
+          description: 'Metadata and technical structure prepared for search engines.',
+        },
+        social: {
+          title: 'Social networks',
+          description: 'Links to Instagram, Facebook, TikTok, and other platforms.',
+        },
+        deployment: {
+          title: 'Deployment',
+          description: 'I can take care of publishing the site and configuring it.',
+        },
+        domain: {
+          title: 'Domain & hosting',
+          description: 'Guidance or assistance with the technical setup you need.',
+        },
+      },
+    },
+
+    audience: {
+      eyebrow: 'Is it right for you?',
+      title: 'A good starting point for many projects.',
+      description:
+        'A Landing Page can be enough to establish your online presence without the complexity of a larger website.',
+
+      items: {
+        businesses: 'Small businesses and local stores',
+        professionals: 'Independent professionals and freelancers',
+        products: 'Products, services, and new ventures',
+        campaigns: 'Advertising campaigns and specific promotions',
+      },
+    },
+
+    examples: {
+      eyebrow: 'Examples',
+      title: 'See what a Landing Page could look like',
+      description:
+        'These examples show different ways a Landing Page can adapt to a specific type of business.',
+
+      items: {
+        barber: {
+          title: 'Barber Shop',
+          url: 'demo / barber-shop',
+          previewTitle: 'Your next haircut starts here.',
+          description:
+            'A focused Landing Page for a barbershop, with services, pricing, location, and a direct WhatsApp booking button.',
+          previewCta: 'View demo',
+        },
+        restaurant: {
+          title: 'Restaurant',
+          url: 'demo / restaurant',
+          previewTitle: 'Good food, one click away.',
+          description:
+            'A Landing Page focused on showcasing a restaurant, its menu, location, and ways to place an order.',
+          previewCta: 'View demo',
+        },
+        professional: {
+          title: 'Professional',
+          url: 'demo / professional',
+          previewTitle: 'Showcase your professional services.',
+          description:
+            'A clean and professional page designed to present services, experience, and contact information.',
+          previewCta: 'View demo',
+        },
+      },
+    },
+
+    process: {
+      eyebrow: 'How I work',
+      title: 'From idea to published website.',
+
+      steps: {
+        discuss: {
+          title: 'Discuss',
+          description: 'We talk about your business, your goals, and what you need.',
+        },
+        define: {
+          title: 'Define',
+          description: 'We decide the structure, content, and functionality of the page.',
+        },
+        develop: {
+          title: 'Develop',
+          description: 'I design and build the page and adapt it to your feedback.',
+        },
+        launch: {
+          title: 'Launch',
+          description: 'I publish the site and help with the final technical setup.',
+        },
+      },
+    },
+
+    cta: {
+      title: 'Have a project in mind?',
+      description:
+        'Tell me a little about your business and what you need. We can discuss the best approach for your Landing Page.',
+      button: 'Let’s talk about your project',
+    },
+
+    otherServices: {
+      eyebrow: 'Need something more?',
+      title: 'Your project can grow from here.',
+
+      website: {
+        title: 'Professional Websites',
+        description:
+          'For businesses that need multiple pages, more content, or a complete online presence.',
+      },
+
+      webapp: {
+        title: 'Custom Web Applications',
+        description:
+          'For projects that need custom functionality, systems, dashboards, integrations, or automation.',
+      },
+
+      view: 'Explore service',
+    },
   },
 }
