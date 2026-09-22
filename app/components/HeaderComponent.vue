@@ -5,14 +5,25 @@ const { locale, t } = useI18n()
 const brandName = ref('Martín Ponce')
 const mobileMenuOpen = ref(false)
 
-const scrollTo = (elementId) => {
-  const element = document.getElementById(elementId)
+const localePath = useLocalePath()
+const route = useRoute()
 
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
+const navigateToSection = async (elementId) => {
+  mobileMenuOpen.value = false
+
+  const homePath = localePath('/')
+
+  if (route.path === homePath) {
+    const element = document.getElementById(elementId)
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+
+    return
   }
 
-  mobileMenuOpen.value = false
+  await navigateTo(`${homePath}#${elementId}`)
 }
 
 const toggleMobileMenu = () => {
@@ -26,8 +37,8 @@ const toggleMobileMenu = () => {
       <div class="relative flex items-center justify-between">
         <!-- Logo -->
         <a
-          href="#home"
-          @click="scrollTo('home')"
+          href="#"
+          @click.prevent="navigateToSection('home')"
           class="bg-linear-to-r from-blue-400 to-cyan-300 bg-clip-text text-2xl font-bold text-transparent"
         >
           {{ brandName }}
@@ -36,40 +47,40 @@ const toggleMobileMenu = () => {
         <!-- Desktop Menu -->
         <div class="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 md:flex">
           <a
-            href="#home"
-            @click="scrollTo('home')"
+            href="#"
+            @click.prevent="navigateToSection('home')"
             class="cursor-pointer transition-colors hover:text-cyan-400"
           >
             {{ t('header.home') }}
           </a>
 
           <a
-            href="#services"
-            @click="scrollTo('services')"
+            href="#"
+            @click.prevent="navigateToSection('services')"
             class="cursor-pointer transition-colors hover:text-cyan-400"
           >
             {{ t('header.services') }}
           </a>
 
           <a
-            href="#about"
-            @click="scrollTo('about')"
+            href="#"
+            @click.prevent="navigateToSection('about')"
             class="cursor-pointer transition-colors hover:text-cyan-400"
           >
             {{ t('header.about') }}
           </a>
 
           <a
-            href="#projects"
-            @click="scrollTo('projects')"
+            href="#"
+            @click.prevent="navigateToSection('projects')"
             class="cursor-pointer transition-colors hover:text-cyan-400"
           >
             {{ t('header.projects') }}
           </a>
 
           <a
-            href="#contact"
-            @click="scrollTo('contact')"
+            href="#"
+            @click.prevent="navigateToSection('contact')"
             class="cursor-pointer transition-colors hover:text-cyan-400"
           >
             {{ t('header.contact') }}
@@ -124,40 +135,40 @@ const toggleMobileMenu = () => {
         class="mt-4 space-y-2 border-t border-white/10 pb-2 pt-4 md:hidden"
       >
         <a
-          href="#home"
-          @click="scrollTo('home')"
+          href="#"
+          @click.prevent="navigateToSection('home')"
           class="block rounded-lg px-3 py-2 transition-colors hover:bg-white/5 hover:text-cyan-400"
         >
           Inicio
         </a>
 
         <a
-          href="#services"
-          @click="scrollTo('services')"
+          href="#"
+          @click.prevent="navigateToSection('services')"
           class="block rounded-lg px-3 py-2 transition-colors hover:bg-white/5 hover:text-cyan-400"
         >
           Servicios
         </a>
 
         <a
-          href="#about"
-          @click="scrollTo('about')"
+          href="#"
+          @click.prevent="navigateToSection('about')"
           class="block rounded-lg px-3 py-2 transition-colors hover:bg-white/5 hover:text-cyan-400"
         >
           Sobre mí
         </a>
 
         <a
-          href="#projects"
-          @click="scrollTo('projects')"
+          href="#"
+          @click.prevent="navigateToSection('projects')"
           class="block rounded-lg px-3 py-2 transition-colors hover:bg-white/5 hover:text-cyan-400"
         >
           Proyectos
         </a>
 
         <a
-          href="#contact"
-          @click="scrollTo('contact')"
+          href="#"
+          @click.prevent="navigateToSection('contact')"
           class="block rounded-lg px-3 py-2 transition-colors hover:bg-white/5 hover:text-cyan-400"
         >
           Contacto
