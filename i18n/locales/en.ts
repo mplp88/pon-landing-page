@@ -285,6 +285,7 @@ export default {
       title: 'See what a Landing Page could look like',
       description:
         'These examples show different ways a Landing Page can adapt to a specific type of business.',
+      viewDemo: 'View demo',
 
       items: {
         barber: {
@@ -293,7 +294,6 @@ export default {
           previewTitle: 'Your next haircut starts here.',
           description:
             'A focused Landing Page for a barbershop, with services, pricing, location, and a direct WhatsApp booking button.',
-          previewCta: 'View demo',
         },
         restaurant: {
           title: 'Restaurant',
@@ -301,7 +301,6 @@ export default {
           previewTitle: 'Good food, one click away.',
           description:
             'A Landing Page focused on showcasing a restaurant, its menu, location, and ways to place an order.',
-          previewCta: 'View demo',
         },
         professional: {
           title: 'Professional',
@@ -309,7 +308,6 @@ export default {
           previewTitle: 'Showcase your professional services.',
           description:
             'A clean and professional page designed to present services, experience, and contact information.',
-          previewCta: 'View demo',
         },
       },
     },
