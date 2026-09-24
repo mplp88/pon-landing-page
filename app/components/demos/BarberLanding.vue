@@ -23,7 +23,7 @@ const services = [
 <template>
   <div class="w-full bg-stone-950 text-stone-100">
     <!-- Hero -->
-    <section class="relative min-h-[720px] overflow-hidden">
+    <section class="relative min-h-180 overflow-hidden">
       <!-- Hero image -->
       <img
         src="/images/demos/barber-hero.jpg"
@@ -33,10 +33,10 @@ const services = [
 
       <!-- Overlay -->
       <div
-        class="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/80 to-stone-950/30"
+        class="absolute inset-0 bg-linear-to-r from-stone-950 via-stone-950/80 to-stone-950/30"
       />
 
-      <div class="relative mx-auto flex min-h-[720px] max-w-6xl items-center px-6 py-24">
+      <div class="relative mx-auto flex min-h-180 max-w-6xl items-center px-6 py-24">
         <div class="max-w-2xl">
           <p class="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-amber-400">
             Barbería · Buenos Aires
@@ -84,7 +84,7 @@ const services = [
           <article
             v-for="service in services"
             :key="service.name"
-            class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:border-amber-400/30 hover:bg-white/[0.05]"
+            class="rounded-2xl border border-white/10 bg-white/3 p-6 transition hover:border-amber-400/30 hover:bg-white/5"
           >
             <div
               class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 text-amber-400"
@@ -152,7 +152,7 @@ const services = [
             class="h-full w-full object-cover"
           />
 
-          <div class="absolute inset-0 bg-gradient-to-t from-stone-950/40 to-transparent" />
+          <div class="absolute inset-0 bg-linear-to-t from-stone-950/40 to-transparent" />
         </div>
       </div>
     </section>
@@ -160,9 +160,7 @@ const services = [
     <!-- Location -->
     <section class="border-t border-white/5 py-20">
       <div class="mx-auto max-w-6xl px-6">
-        <div
-          class="grid gap-8 rounded-3xl border border-white/10 bg-white/[0.03] p-8 md:grid-cols-2"
-        >
+        <div class="grid gap-8 rounded-3xl border border-white/10 bg-white/3 p-8 md:grid-cols-2">
           <div>
             <MapPin class="h-7 w-7 text-amber-400" />
 

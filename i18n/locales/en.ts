@@ -286,6 +286,7 @@ export default {
       description:
         'These examples show different ways a Landing Page can adapt to a specific type of business.',
       viewDemo: 'View demo',
+      backToExamples: 'Back to examples',
 
       items: {
         barber: {

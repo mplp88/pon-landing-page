@@ -31,7 +31,7 @@ const dishes = [
 <template>
   <div class="w-full bg-stone-50 text-stone-900">
     <!-- Hero -->
-    <section class="relative min-h-[720px] overflow-hidden">
+    <section class="relative min-h-180 overflow-hidden">
       <img
         src="/images/demos/restaurant-hero.jpg"
         alt="Plato de pasta servido en un restaurante"
@@ -39,10 +39,10 @@ const dishes = [
       />
 
       <div
-        class="absolute inset-0 bg-gradient-to-r from-stone-950/90 via-stone-950/60 to-stone-950/20"
+        class="absolute inset-0 bg-linear-to-r from-stone-950/90 via-stone-950/60 to-stone-950/20"
       />
 
-      <div class="relative mx-auto flex min-h-[720px] max-w-6xl items-center px-6 py-24">
+      <div class="relative mx-auto flex min-h-180 max-w-6xl items-center px-6 py-24">
         <div class="max-w-2xl text-white">
           <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-orange-300">
             Cocina · Buenos Aires
@@ -100,7 +100,7 @@ const dishes = [
           </div>
         </div>
 
-        <div class="relative aspect-[4/3] overflow-hidden rounded-3xl">
+        <div class="relative aspect-4/3 overflow-hidden rounded-3xl">
           <img
             src="/images/demos/restaurant-interior.jpg"
             alt="Interior de un restaurante"
@@ -211,9 +211,7 @@ const dishes = [
     <!-- Location -->
     <section class="bg-stone-900 py-20 text-white">
       <div class="mx-auto max-w-6xl px-6">
-        <div
-          class="grid gap-8 rounded-3xl border border-white/10 bg-white/[0.04] p-8 md:grid-cols-2"
-        >
+        <div class="grid gap-8 rounded-3xl border border-white/10 bg-white/4 p-8 md:grid-cols-2">
           <div>
             <MapPin class="h-7 w-7 text-orange-300" />
 

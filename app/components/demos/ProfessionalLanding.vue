@@ -58,9 +58,7 @@ const services = [
 
     <!-- Hero -->
     <section class="overflow-hidden">
-      <div
-        class="mx-auto grid max-w-6xl md:min-h-[680px] md:grid-cols-[1.05fr_0.95fr] md:items-center"
-      >
+      <div class="mx-auto grid max-w-6xl md:min-h-170 md:grid-cols-[1.05fr_0.95fr] md:items-center">
         <div class="px-6 py-20 md:py-24">
           <p class="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
             Psicología · Buenos Aires
@@ -98,14 +96,14 @@ const services = [
         </div>
 
         <!-- Hero image -->
-        <div class="relative h-[500px] md:h-full">
+        <div class="relative h-125 md:h-full">
           <img
             src="/images/demos/professional-hero.jpg"
             alt="Profesional en su espacio de trabajo"
             class="h-full w-full object-cover"
           />
 
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent" />
+          <div class="absolute inset-0 bg-linear-to-t from-slate-900/10 to-transparent" />
         </div>
       </div>
     </section>
@@ -115,7 +113,7 @@ const services = [
       <div class="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-[0.8fr_1.2fr] md:items-center">
         <!-- Portrait -->
         <div
-          class="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl bg-slate-100"
+          class="relative mx-auto aspect-4/5 w-full max-w-md overflow-hidden rounded-3xl bg-slate-100"
         >
           <img
             src="/images/demos/professional-portrait.jpg"
@@ -286,7 +284,7 @@ const services = [
           </div>
         </div>
 
-        <div class="relative aspect-[4/3] overflow-hidden rounded-3xl bg-slate-100">
+        <div class="relative aspect-4/3 overflow-hidden rounded-3xl bg-slate-100">
           <img
             src="/images/demos/professional-office.jpg"
             alt="Espacio profesional de consulta"

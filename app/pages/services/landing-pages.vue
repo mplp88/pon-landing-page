@@ -55,7 +55,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
+  <div class="min-h-screen bg-linear-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
     <!-- Hero -->
     <section class="relative overflow-hidden px-6 pb-20 pt-28 md:pb-28 md:pt-36">
       <div
@@ -274,7 +274,7 @@ useSeoMeta({
 
               <!-- Overlay -->
               <div
-                class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent p-5 opacity-100 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100"
+                class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-slate-950 via-slate-950/60 to-transparent p-5 opacity-100 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100"
               >
                 <h3 class="text-xl font-bold text-white">
                   {{ t(`landing.examples.items.${example.id}.title`) }}

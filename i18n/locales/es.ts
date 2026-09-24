@@ -292,6 +292,7 @@ export default {
       description:
         'Estos ejemplos muestran distintas formas de adaptar una Landing Page a un tipo de negocio específico.',
       viewDemo: 'Ver demo',
+      backToExamples: 'Volver a ejemplos',
 
       items: {
         barber: {
