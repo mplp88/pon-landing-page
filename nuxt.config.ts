@@ -9,6 +9,25 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  app: {
+    head: {
+      script: [
+        {
+          async: true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-XBG88CFGLV',
+        },
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XBG88CFGLV');
+          `,
+          type: 'text/javascript',
+        },
+      ],
+    },
+  },
   i18n: {
     locales: [
       {
