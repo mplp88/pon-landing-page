@@ -363,4 +363,445 @@ export default {
       view: 'Explore service',
     },
   },
+
+  webSites: {
+    seo: {
+      title: 'Professional Websites | Martín Ponce',
+      description:
+        'Modern, professional websites tailored to the needs of your business, brand or professional activity.',
+      ogTitle: 'Professional Websites | Martín Ponce',
+      ogDescription: 'A complete online presence, designed around your project.',
+    },
+
+    hero: {
+      eyebrow: 'Professional websites',
+      title: {
+        before: 'Your project deserves ',
+        highlight: 'a complete website.',
+      },
+      description:
+        'I build modern, fast websites tailored to your identity, with the structure and content you need to present your business or professional activity.',
+      cta: 'Let’s talk about your project',
+      secondaryCta: 'View real project',
+      points: {
+        responsive: 'Responsive',
+        custom: 'Custom design',
+        seo: 'Basic SEO',
+      },
+      visual: {
+        title: 'Designed for every device',
+        description: 'Desktop · Tablet · Mobile',
+      },
+    },
+
+    whatIs: {
+      eyebrow: 'What is a professional website?',
+      title: 'A complete online presence',
+      paragraph1:
+        'A professional website lets you present your project in greater depth and organize your information across different pages and sections.',
+      paragraph2:
+        'Unlike a Landing Page, you do not need to fit everything into a single page. We can create a structure specifically designed around what you need to communicate.',
+      highlight: {
+        title: 'A structure designed around your project',
+        description:
+          'The number of pages, sections and features is defined according to your needs. You do not need to choose from a fixed package.',
+      },
+    },
+
+    features: {
+      eyebrow: 'What can it include?',
+      title: 'Everything your project needs',
+      description:
+        'Every website is built around its purpose. These are some of the sections and features we can include.',
+      items: {
+        structure: {
+          title: 'Structure',
+          description:
+            'We organize your content into pages and sections so information is easy to find.',
+        },
+        design: {
+          title: 'Custom design',
+          description: 'A visual identity adapted to your brand, activity and audience.',
+        },
+        responsive: {
+          title: 'Responsive',
+          description: 'An experience designed for phones, tablets and computers.',
+        },
+        seo: {
+          title: 'SEO',
+          description:
+            'Technical best practices that help search engines understand and display your website.',
+        },
+        contact: {
+          title: 'Contact',
+          description: 'WhatsApp, forms, email, social media and other communication channels.',
+        },
+        content: {
+          title: 'Blog & content',
+          description: 'Publish articles, news and content to keep your website updated.',
+        },
+        about: {
+          title: 'About you or your company',
+          description: 'Present your story, experience, team, values and background.',
+        },
+        custom: {
+          title: 'Custom features',
+          description:
+            'If you need something specific, we can analyze it and develop a tailored solution.',
+        },
+      },
+    },
+
+    flexible: {
+      title: 'You do not need everything.',
+      description:
+        'Every project has different needs. We define together which pages, sections and features actually add value.',
+      items: {
+        first:
+          'The structure adapts to your business and the amount of information you need to present.',
+        second: 'We can start with the essentials and expand the website in the future.',
+        third: 'The quote is based on the actual scope of the project.',
+      },
+    },
+
+    audience: {
+      eyebrow: 'Who is it for?',
+      title: 'When your project needs more room to grow',
+      description:
+        'A professional website is a good option when a single page is no longer enough to explain everything you do.',
+      items: {
+        businesses: {
+          title: 'Businesses',
+          description: 'Present your company, services, team, experience and contact information.',
+        },
+        professionals: {
+          title: 'Professionals',
+          description:
+            'Showcase your experience, services, specialties and content professionally.',
+        },
+        brands: {
+          title: 'Brands & businesses',
+          description:
+            'Build an online presence to showcase products, services and brand identity.',
+        },
+        projects: {
+          title: 'Projects & startups',
+          description: 'Create an online foundation that can grow with your project.',
+        },
+      },
+    },
+
+    comparison: {
+      eyebrow: 'Which one do you need?',
+      title: 'Landing Page or Professional Website',
+      description:
+        'Both options can be great. The difference is how much you need to communicate and how you want to organize it.',
+      landing: {
+        eyebrow: 'One page',
+        title: 'Landing Page',
+        description: 'A focused page designed to present your project clearly and directly.',
+        features: {
+          focused: 'Content concentrated on a single page',
+          simple: 'Simple and direct structure',
+          fast: 'Ideal for getting started quickly',
+          action: 'Designed around a specific action',
+        },
+      },
+      website: {
+        eyebrow: 'Multiple pages',
+        title: 'Professional Website',
+        description:
+          'A more complete structure for organizing and presenting a larger amount of information.',
+        features: {
+          multiplePages: 'Multiple pages and sections',
+          content: 'More room for content',
+          structure: 'Information organized by categories',
+          growth: 'More room for future growth',
+        },
+      },
+      footer:
+        'Not sure which one you need? We can figure it out together before preparing a quote.',
+    },
+
+    project: {
+      eyebrow: 'A real project',
+      title: 'See what a professional website can look like',
+      category: 'Professional website',
+      badge: 'Developed project',
+      imageAlt: 'Maternidad y Emociones website preview',
+      description:
+        'Maternidad y Emociones is a professional website developed to present services, information and content through a blog.',
+      features: {
+        website: 'Complete website',
+        blog: 'Content publishing',
+        responsive: 'Responsive design',
+      },
+      cta: 'View project',
+    },
+
+    process: {
+      eyebrow: 'How I work',
+      title: 'From idea to published website',
+      description:
+        'Every project starts by understanding what you need and ends with a website ready to represent your project online.',
+      steps: {
+        discovery: {
+          title: 'We talk',
+          description: 'I understand your project, goals and needs.',
+        },
+        planning: {
+          title: 'We plan',
+          description: 'We define the structure, content and scope.',
+        },
+        design: {
+          title: 'We design',
+          description: 'We create a visual direction adapted to your identity.',
+        },
+        development: {
+          title: 'We develop',
+          description: 'We turn the design into a fast, responsive and functional website.',
+        },
+        launch: {
+          title: 'We launch',
+          description: 'We configure and publish your website online.',
+        },
+      },
+      note: 'Each project is quoted according to its scope and features.',
+    },
+
+    cta: {
+      title: 'Does your project need a more complete online presence?',
+      description:
+        'Tell me what you need and we can define the right structure for your website together.',
+      button: 'Let’s talk about your project',
+      note: 'Custom quotes based on project scope.',
+    },
+
+    otherServices: {
+      eyebrow: 'You may also be looking for',
+      title: 'Other services',
+      view: 'Explore service',
+      landing: {
+        title: 'Landing Pages',
+        description: 'A clear and focused page to present your business, service or project.',
+      },
+      apps: {
+        title: 'Custom Web Applications',
+        description: 'Tools and systems developed specifically around your business needs.',
+      },
+    },
+  },
+
+  webApps: {
+    seo: {
+      title: 'Custom Web Applications | Martín Ponce',
+      description:
+        'Custom web application development for businesses and professionals: management systems, dashboards, automations, and integrations.',
+      ogTitle: 'Custom Web Applications | Martín Ponce',
+      ogDescription:
+        'Custom web applications built to solve processes, manage information, and help your project grow.',
+    },
+
+    hero: {
+      eyebrow: 'Custom web applications',
+      title: {
+        before: 'A tool built around ',
+        highlight: 'your project.',
+      },
+      description:
+        'I design and build web applications tailored to your processes, needs, and goals — from internal systems to complete platforms for your customers.',
+      cta: 'Let’s talk about your project',
+      secondaryCta: 'Learn more',
+    },
+
+    whatIs: {
+      eyebrow: 'What is a web application?',
+      title: 'More than a website: a tool built to do things.',
+      paragraph1:
+        'A web application allows people to interact with information, processes, and functionality from any device, directly through a browser.',
+      paragraph2:
+        'Unlike a traditional website, an application can manage users, data, operations, and processes specific to your business.',
+      highlight:
+        'The goal is not to adapt your business to a generic solution, but to build a tool around what you actually need.',
+    },
+
+    features: {
+      eyebrow: 'Possibilities',
+      title: 'Features adapted to your project',
+      description:
+        'Every application is defined by its goals. These are some of the features I can develop.',
+      items: {
+        processes: {
+          title: 'Processes and workflows',
+          description: 'Digitize and automate tasks that are currently handled manually.',
+        },
+        users: {
+          title: 'Users and roles',
+          description:
+            'Different access levels for customers, employees, administrators, or other profiles.',
+        },
+        data: {
+          title: 'Data management',
+          description:
+            'Centralized and organized information for creating, managing, and querying records.',
+        },
+        dashboard: {
+          title: 'Dashboards and metrics',
+          description: 'Dashboards to visualize relevant information and support decision-making.',
+        },
+        authentication: {
+          title: 'Authentication',
+          description: 'Access and permission systems adapted to the needs of each application.',
+        },
+        custom: {
+          title: 'Custom functionality',
+          description: 'The application is built around the specific requirements of the project.',
+        },
+        integrations: {
+          title: 'Integrations',
+          description: 'Connect with APIs, external services, and the tools you already use.',
+        },
+        responsive: {
+          title: 'Responsive',
+          description: 'Interfaces designed to work across computers, tablets, and phones.',
+        },
+      },
+    },
+
+    custom: {
+      eyebrow: 'Custom development',
+      title: 'The application adapts to your project.',
+      description:
+        'Not every business works the same way. That is why development starts by understanding the problem, analyzing the process, and defining an appropriate solution.',
+      items: {
+        custom: 'Features defined according to the real needs of the project.',
+        scalable: 'An architecture prepared to support future functionality.',
+        accessible: 'Accessible from any device with an Internet connection.',
+        maintainable: 'Structured code that makes future improvements and maintenance easier.',
+      },
+      card: {
+        title: 'From need to solution',
+        subtitle: 'A process designed to build with purpose',
+        steps: {
+          0: 'Need',
+          1: 'Analysis',
+          2: 'Development',
+          3: 'Solution',
+        },
+      },
+    },
+
+    audience: {
+      eyebrow: 'Who is it for?',
+      title: 'When a website is no longer enough',
+      description:
+        'A web application can help a business digitize processes or help a new project turn an idea into its own product.',
+      items: {
+        businesses: {
+          title: 'Businesses',
+          description:
+            'Manage operations, customers, products, orders, or other internal processes.',
+        },
+        professionals: {
+          title: 'Professionals',
+          description: 'Build specific tools that support and simplify their work.',
+        },
+        internal: {
+          title: 'Teams',
+          description: 'Centralize information and make everyday work easier for different people.',
+        },
+        newIdeas: {
+          title: 'New projects',
+          description: 'Turn a product or service idea into a functional application.',
+        },
+      },
+    },
+
+    process: {
+      eyebrow: 'How I work',
+      title: 'From problem to functional solution',
+      description:
+        'Development is divided into stages to understand the project, validate the solution, and build it progressively.',
+      steps: {
+        discovery: {
+          title: 'Discovery',
+          description: 'I understand the problem, users, and goals of the project.',
+        },
+        planning: {
+          title: 'Planning',
+          description: 'We define features, scope, and priorities.',
+        },
+        design: {
+          title: 'Design',
+          description: 'I design the experience and interface before turning it into code.',
+        },
+        development: {
+          title: 'Development',
+          description: 'I build the application and its core functionality.',
+        },
+        launch: {
+          title: 'Implementation',
+          description: 'I prepare the project for production and future evolution.',
+        },
+      },
+    },
+
+    comparison: {
+      eyebrow: 'What do you need?',
+      title: 'Each solution has a different purpose',
+      description:
+        'The difference is not about which one is bigger, but about which problem you need to solve.',
+      feature: 'Feature',
+      landing: 'Landing Page',
+      website: 'Website',
+      app: 'Web Application',
+      rows: {
+        objective: {
+          label: 'Goal',
+          landing: 'Present and convert',
+          website: 'Build digital presence',
+          app: 'Solve processes',
+        },
+        content: {
+          label: 'Content',
+          landing: 'One focused page',
+          website: 'Multiple pages and content',
+          app: 'Data and functionality',
+        },
+        interaction: {
+          label: 'Interaction',
+          landing: 'Basic',
+          website: 'Moderate',
+          app: 'High',
+        },
+        example: {
+          label: 'Example',
+          landing: 'Promotion or campaign',
+          website: 'Business or professional',
+          app: 'Management, sales, or processes',
+        },
+      },
+    },
+
+    cta: {
+      title: 'Do you have an idea or a process to improve?',
+      description:
+        'Tell me what you need and we can explore together what kind of solution makes sense for your project.',
+      button: 'Let’s talk about your project',
+    },
+
+    otherServices: {
+      eyebrow: 'Other services',
+      title: 'I can also help you with',
+      view: 'View service',
+      landing: {
+        title: 'Landing Pages',
+        description: 'Focused pages designed to present an offer and drive a specific action.',
+      },
+      website: {
+        title: 'Professional Websites',
+        description: 'A complete digital presence for businesses, professionals, and projects.',
+      },
+    },
+  },
 }
