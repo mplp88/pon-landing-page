@@ -123,7 +123,7 @@ const applicationFeatures = ['custom', 'scalable', 'accessible', 'maintainable']
 
             <!-- Application -->
             <div
-              class="grid min-h-[340px] min-w-0 grid-cols-[64px_minmax(0,1fr)] sm:min-h-[430px] sm:grid-cols-[110px_minmax(0,1fr)]"
+              class="grid min-h-85 min-w-0 grid-cols-[64px_minmax(0,1fr)] sm:min-h-107.5 sm:grid-cols-[110px_minmax(0,1fr)]"
             >
               <!-- Sidebar -->
               <aside class="border-r border-white/10 bg-slate-900/80 p-3 sm:p-2">
@@ -184,20 +184,20 @@ const applicationFeatures = ['custom', 'scalable', 'accessible', 'maintainable']
 
                 <!-- Stats -->
                 <div class="mt-5 grid grid-cols-2 gap-2 sm:mt-7 sm:grid-cols-3 sm:gap-3">
-                  <div class="rounded-xl border border-white/5 bg-white/[0.03] p-3">
+                  <div class="rounded-xl border border-white/5 bg-white/3 p-3">
                     <p class="text-[9px] text-slate-500">Users</p>
                     <p class="mt-1 text-sm font-bold text-white sm:text-base">1,284</p>
                     <p class="mt-1 text-[8px] text-cyan-400">+12.5%</p>
                   </div>
 
-                  <div class="rounded-xl border border-white/5 bg-white/[0.03] p-3">
+                  <div class="rounded-xl border border-white/5 bg-white/3 p-3">
                     <p class="text-[9px] text-slate-500">Orders</p>
                     <p class="mt-1 text-sm font-bold text-white sm:text-base">384</p>
                     <p class="mt-1 text-[8px] text-cyan-400">+8.2%</p>
                   </div>
 
                   <div
-                    class="col-span-2 rounded-xl border border-white/5 bg-white/[0.03] p-3 sm:col-span-1"
+                    class="col-span-2 rounded-xl border border-white/5 bg-white/3 p-3 sm:col-span-1"
                   >
                     <p class="text-[9px] text-slate-500">Revenue</p>
                     <p class="mt-1 text-sm font-bold text-white sm:text-base">$24.8k</p>
@@ -206,7 +206,7 @@ const applicationFeatures = ['custom', 'scalable', 'accessible', 'maintainable']
                 </div>
 
                 <!-- Chart -->
-                <div class="mt-3 rounded-xl border border-white/5 bg-white/[0.03] p-3 sm:mt-4">
+                <div class="mt-3 rounded-xl border border-white/5 bg-white/3 p-3 sm:mt-4">
                   <div class="flex items-center justify-between">
                     <p class="text-[9px] font-medium text-slate-300">Activity</p>
 
@@ -228,9 +228,7 @@ const applicationFeatures = ['custom', 'scalable', 'accessible', 'maintainable']
                 </div>
 
                 <!-- Table -->
-                <div
-                  class="mt-3 hidden rounded-xl border border-white/5 bg-white/[0.03] p-3 sm:block"
-                >
+                <div class="mt-3 hidden rounded-xl border border-white/5 bg-white/3 p-3 sm:block">
                   <div class="flex items-center justify-between">
                     <p class="text-[9px] font-medium text-slate-300">Recent activity</p>
 
@@ -505,7 +503,7 @@ const applicationFeatures = ['custom', 'scalable', 'accessible', 'maintainable']
         </div>
 
         <div class="mt-12 overflow-x-auto rounded-2xl border border-white/10">
-          <table class="w-full min-w-[720px] border-collapse text-left">
+          <table class="w-full min-w-180 border-collapse text-left">
             <thead>
               <tr class="border-b border-white/10 bg-white/5">
                 <th class="px-5 py-4 text-sm font-semibold text-slate-400">
