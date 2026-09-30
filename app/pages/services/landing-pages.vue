@@ -88,8 +88,9 @@ useSeoMeta({
 
         <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <a
-            href="#contact"
+            href="https://wa.me/5491178293958?text=Hola%21%20Vi%20tu%20p%C3%A1gina%20y%20me%20interesa%20consultar%20por%20una%20lading%20page."
             class="inline-flex items-center justify-center gap-2 rounded-lg bg-linear-to-r from-blue-600 to-cyan-600 px-7 py-3 font-semibold transition-all hover:scale-105 hover:from-blue-700 hover:to-cyan-700"
+            target="_blank"
           >
             {{ t('landing.hero.cta') }}
             <ArrowRight class="h-4 w-4" />

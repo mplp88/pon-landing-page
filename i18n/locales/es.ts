@@ -369,4 +369,454 @@ export default {
       view: 'Ver servicio',
     },
   },
+
+  webSites: {
+    seo: {
+      title: 'Sitios Web Profesionales | Martín Ponce',
+      description:
+        'Sitios web profesionales, modernos y adaptados a las necesidades de tu negocio, marca o actividad.',
+      ogTitle: 'Sitios Web Profesionales | Martín Ponce',
+      ogDescription: 'Una presencia online completa, moderna y adaptada a tu proyecto.',
+    },
+
+    hero: {
+      eyebrow: 'Sitios web profesionales',
+      title: {
+        before: 'Tu proyecto merece ',
+        highlight: 'una web completa.',
+      },
+      description:
+        'Desarrollo sitios web modernos, rápidos y adaptados a tu identidad, con la estructura y el contenido que necesitás para presentar tu negocio o actividad profesional.',
+      cta: 'Hablemos de tu proyecto',
+      secondaryCta: 'Ver proyecto real',
+      points: {
+        responsive: 'Responsive',
+        custom: 'Diseño personalizado',
+        seo: 'SEO básico',
+      },
+      visual: {
+        title: 'Diseñada para todos los dispositivos',
+        description: 'Desktop · Tablet · Mobile',
+      },
+    },
+
+    whatIs: {
+      eyebrow: '¿Qué es un sitio web profesional?',
+      title: 'Una presencia online completa',
+      paragraph1:
+        'Un sitio web profesional permite presentar tu proyecto con mayor profundidad y organizar la información en distintas páginas y secciones.',
+      paragraph2:
+        'A diferencia de una Landing Page, no necesitás concentrar todo el contenido en una única página. Podemos crear una estructura pensada específicamente para lo que querés comunicar.',
+      highlight: {
+        title: 'Una estructura pensada para tu proyecto',
+        description:
+          'La cantidad de páginas, secciones y funcionalidades se define según tus necesidades. No necesitás contratar un paquete cerrado.',
+      },
+    },
+
+    features: {
+      eyebrow: '¿Qué puede incluir?',
+      title: 'Todo lo que tu proyecto necesita',
+      description:
+        'Cada sitio se adapta a su objetivo. Estas son algunas de las secciones y funcionalidades que podemos incorporar.',
+      items: {
+        structure: {
+          title: 'Estructura',
+          description:
+            'Organizamos el contenido en páginas y secciones para que la información sea fácil de encontrar.',
+        },
+        design: {
+          title: 'Diseño personalizado',
+          description: 'Una identidad visual adaptada a tu marca, actividad y público.',
+        },
+        responsive: {
+          title: 'Responsive',
+          description: 'Una experiencia pensada para celulares, tablets y computadoras.',
+        },
+        seo: {
+          title: 'SEO',
+          description:
+            'Buenas prácticas técnicas para que los buscadores puedan entender y mostrar tu sitio.',
+        },
+        contact: {
+          title: 'Contacto',
+          description:
+            'WhatsApp, formularios, email, redes sociales y otros canales de comunicación.',
+        },
+        content: {
+          title: 'Blog y contenido',
+          description:
+            'Publicá artículos, novedades y contenido para mantener actualizado tu sitio.',
+        },
+        about: {
+          title: 'Sobre vos o tu empresa',
+          description: 'Presentá tu historia, experiencia, equipo, valores y trayectoria.',
+        },
+        custom: {
+          title: 'Funcionalidades a medida',
+          description:
+            'Si necesitás algo específico, podemos analizarlo y desarrollar una solución personalizada.',
+        },
+      },
+    },
+
+    flexible: {
+      title: 'No necesitás todo.',
+      description:
+        'Cada proyecto tiene necesidades diferentes. Definimos juntos qué páginas, secciones y funcionalidades realmente aportan valor.',
+      items: {
+        first:
+          'La estructura se adapta a tu negocio y a la cantidad de información que necesitás presentar.',
+        second: 'Podemos comenzar con lo esencial y ampliar el sitio en el futuro.',
+        third: 'El presupuesto se define según el alcance real del proyecto.',
+      },
+    },
+
+    audience: {
+      eyebrow: '¿Para quién es?',
+      title: 'Cuando tu proyecto necesita más espacio para crecer',
+      description:
+        'Un sitio web profesional es una buena opción cuando una sola página ya no alcanza para explicar todo lo que hacés.',
+      items: {
+        businesses: {
+          title: 'Empresas',
+          description: 'Presentá tu empresa, servicios, equipo, trayectoria y formas de contacto.',
+        },
+        professionals: {
+          title: 'Profesionales',
+          description:
+            'Mostrá tu experiencia, servicios, especialidades y contenido de manera profesional.',
+        },
+        brands: {
+          title: 'Marcas y negocios',
+          description:
+            'Construí una presencia digital para mostrar productos, servicios e identidad de marca.',
+        },
+        projects: {
+          title: 'Emprendimientos',
+          description: 'Creá una base online que pueda acompañar el crecimiento de tu proyecto.',
+        },
+      },
+    },
+
+    comparison: {
+      eyebrow: '¿Cuál necesitás?',
+      title: 'Landing Page o Sitio Web Profesional',
+      description:
+        'Ambas opciones pueden ser excelentes. La diferencia está en cuánto necesitás comunicar y cómo querés organizarlo.',
+      landing: {
+        eyebrow: 'Una página',
+        title: 'Landing Page',
+        description: 'Una página enfocada en presentar tu proyecto de forma clara y directa.',
+        features: {
+          focused: 'Contenido concentrado en una única página',
+          simple: 'Estructura simple y directa',
+          fast: 'Ideal para comenzar rápidamente',
+          action: 'Pensada para generar una acción concreta',
+        },
+      },
+      website: {
+        eyebrow: 'Varias páginas',
+        title: 'Sitio Web Profesional',
+        description:
+          'Una estructura más completa para organizar y presentar mayor cantidad de información.',
+        features: {
+          multiplePages: 'Múltiples páginas y secciones',
+          content: 'Mayor cantidad de contenido',
+          structure: 'Información organizada por categorías',
+          growth: 'Más posibilidades de crecimiento',
+        },
+      },
+      footer: '¿No sabés cuál necesitás? Lo vemos juntos antes de presupuestar el proyecto.',
+    },
+
+    project: {
+      eyebrow: 'Un proyecto real',
+      title: 'Así puede verse un sitio profesional',
+      category: 'Sitio web profesional',
+      badge: 'Proyecto desarrollado',
+      imageAlt: 'Vista del sitio web de Maternidad y Emociones',
+      description:
+        'Maternidad y Emociones es un sitio web profesional desarrollado para presentar servicios, información y contenido mediante un blog.',
+      features: {
+        website: 'Sitio web completo',
+        blog: 'Publicación de contenido',
+        responsive: 'Diseño responsive',
+      },
+      cta: 'Ver proyecto',
+    },
+
+    process: {
+      eyebrow: 'Cómo trabajo',
+      title: 'De la idea al sitio publicado',
+      description:
+        'Cada proyecto comienza entendiendo qué necesitás y termina con una web lista para representar tu proyecto online.',
+      steps: {
+        discovery: {
+          title: 'Conversamos',
+          description: 'Entiendo tu proyecto, objetivos y necesidades.',
+        },
+        planning: {
+          title: 'Planificamos',
+          description: 'Definimos estructura, contenido y alcance.',
+        },
+        design: {
+          title: 'Diseñamos',
+          description: 'Construimos una propuesta visual adaptada a tu identidad.',
+        },
+        development: {
+          title: 'Desarrollamos',
+          description: 'Transformamos el diseño en un sitio rápido, responsive y funcional.',
+        },
+        launch: {
+          title: 'Publicamos',
+          description: 'Configuramos y ponemos tu sitio online.',
+        },
+      },
+      note: 'Cada proyecto se presupuesta de acuerdo con su alcance y funcionalidades.',
+    },
+
+    cta: {
+      title: '¿Tu proyecto necesita una presencia web más completa?',
+      description:
+        'Contame qué necesitás y podemos definir juntos la estructura adecuada para tu sitio.',
+      button: 'Hablemos de tu proyecto',
+      note: 'Presupuestos personalizados según el alcance del proyecto.',
+    },
+
+    otherServices: {
+      eyebrow: 'También podés estar buscando',
+      title: 'Otros servicios',
+      view: 'Ver servicio',
+      landing: {
+        title: 'Landing Pages',
+        description: 'Una página clara y enfocada para presentar tu negocio, servicio o proyecto.',
+      },
+      apps: {
+        title: 'Aplicaciones Web a Medida',
+        description:
+          'Herramientas y sistemas desarrollados específicamente para las necesidades de tu negocio.',
+      },
+    },
+  },
+
+  webApps: {
+    seo: {
+      title: 'Aplicaciones Web a Medida | Martín Ponce',
+      description:
+        'Desarrollo de aplicaciones web a medida para negocios y profesionales: sistemas de gestión, dashboards, automatizaciones e integraciones.',
+      ogTitle: 'Aplicaciones Web a Medida | Martín Ponce',
+      ogDescription:
+        'Aplicaciones web desarrolladas a medida para resolver procesos, gestionar información y hacer crecer tu proyecto.',
+    },
+
+    hero: {
+      eyebrow: 'Aplicaciones web a medida',
+      title: {
+        before: 'Una herramienta pensada para ',
+        highlight: 'tu proyecto.',
+      },
+      description:
+        'Diseño y desarrollo aplicaciones web adaptadas a tus procesos, necesidades y objetivos: desde sistemas internos hasta plataformas completas para tus clientes.',
+      cta: 'Hablemos de tu proyecto',
+      secondaryCta: 'Conocer más',
+    },
+
+    whatIs: {
+      eyebrow: '¿Qué es una aplicación web?',
+      title: 'Más que una página: una herramienta para hacer.',
+      paragraph1:
+        'Una aplicación web permite que las personas interactúen con información, procesos y funcionalidades desde cualquier dispositivo, directamente desde el navegador.',
+      paragraph2:
+        'A diferencia de un sitio web tradicional, una aplicación puede gestionar usuarios, datos, operaciones y procesos específicos de tu negocio.',
+      highlight:
+        'La idea no es adaptar tu negocio a una solución genérica, sino desarrollar una herramienta alrededor de lo que realmente necesitás.',
+    },
+
+    features: {
+      eyebrow: 'Posibilidades',
+      title: 'Funcionalidades adaptadas a tu proyecto',
+      description:
+        'Cada aplicación se define según sus objetivos. Estas son algunas de las funcionalidades que puedo desarrollar.',
+      items: {
+        processes: {
+          title: 'Procesos y flujos',
+          description: 'Digitalización y automatización de tareas que hoy realizás manualmente.',
+        },
+        users: {
+          title: 'Usuarios y roles',
+          description:
+            'Accesos diferenciados para clientes, empleados, administradores u otros perfiles.',
+        },
+        data: {
+          title: 'Gestión de datos',
+          description:
+            'Información centralizada y organizada para consultar, crear y administrar registros.',
+        },
+        dashboard: {
+          title: 'Paneles y métricas',
+          description:
+            'Dashboards para visualizar información relevante y facilitar la toma de decisiones.',
+        },
+        authentication: {
+          title: 'Autenticación',
+          description:
+            'Sistemas de acceso y permisos adaptados a las necesidades de cada aplicación.',
+        },
+        custom: {
+          title: 'Funcionalidades a medida',
+          description:
+            'La aplicación se construye alrededor de los requerimientos específicos del proyecto.',
+        },
+        integrations: {
+          title: 'Integraciones',
+          description: 'Conexión con APIs, servicios externos y herramientas que ya utilizás.',
+        },
+        responsive: {
+          title: 'Responsive',
+          description:
+            'Interfaces preparadas para utilizarse desde computadoras, tablets y teléfonos.',
+        },
+      },
+    },
+
+    custom: {
+      eyebrow: 'Desarrollo a medida',
+      title: 'La aplicación se adapta a tu proyecto.',
+      description:
+        'No todos los negocios funcionan de la misma manera. Por eso el desarrollo parte de entender el problema, analizar el proceso y definir una solución acorde.',
+      items: {
+        custom: 'Funcionalidades definidas según las necesidades reales del proyecto.',
+        scalable: 'Una arquitectura preparada para incorporar nuevas funcionalidades.',
+        accessible: 'Acceso desde cualquier dispositivo con conexión a Internet.',
+        maintainable: 'Código estructurado para facilitar futuras mejoras y mantenimiento.',
+      },
+      card: {
+        title: 'De la necesidad a la solución',
+        subtitle: 'Un proceso pensado para construir con criterio',
+        steps: {
+          0: 'Necesidad',
+          1: 'Análisis',
+          2: 'Desarrollo',
+          3: 'Solución',
+        },
+      },
+    },
+
+    audience: {
+      eyebrow: '¿Para quién es?',
+      title: 'Cuando una web ya no alcanza',
+      description:
+        'Una aplicación web puede ser útil tanto para un negocio que quiere digitalizar procesos como para un proyecto que necesita construir un producto propio.',
+      items: {
+        businesses: {
+          title: 'Negocios',
+          description:
+            'Para gestionar operaciones, clientes, productos, pedidos u otros procesos internos.',
+        },
+        professionals: {
+          title: 'Profesionales',
+          description:
+            'Para crear herramientas específicas que acompañen y simplifiquen su actividad.',
+        },
+        internal: {
+          title: 'Equipos',
+          description:
+            'Para centralizar información y facilitar el trabajo diario de distintas personas.',
+        },
+        newIdeas: {
+          title: 'Nuevos proyectos',
+          description:
+            'Para transformar una idea de producto o servicio en una aplicación funcional.',
+        },
+      },
+    },
+
+    process: {
+      eyebrow: 'Cómo trabajo',
+      title: 'Del problema a una solución funcional',
+      description:
+        'El desarrollo se divide en etapas para entender el proyecto, validar la solución y construirla de forma progresiva.',
+      steps: {
+        discovery: {
+          title: 'Descubrimiento',
+          description: 'Entiendo el problema, los usuarios y los objetivos del proyecto.',
+        },
+        planning: {
+          title: 'Planificación',
+          description: 'Definimos funcionalidades, alcance y prioridades.',
+        },
+        design: {
+          title: 'Diseño',
+          description: 'Diseño la experiencia y la interfaz antes de llevarla al código.',
+        },
+        development: {
+          title: 'Desarrollo',
+          description: 'Construyo la aplicación y sus funcionalidades principales.',
+        },
+        launch: {
+          title: 'Implementación',
+          description: 'Preparo el proyecto para su puesta en producción y evolución.',
+        },
+      },
+    },
+
+    comparison: {
+      eyebrow: '¿Qué necesitás?',
+      title: 'Cada solución tiene un propósito diferente',
+      description:
+        'La diferencia no está en cuál es más grande, sino en qué problema necesitás resolver.',
+      feature: 'Característica',
+      landing: 'Landing Page',
+      website: 'Sitio Web',
+      app: 'Aplicación Web',
+      rows: {
+        objective: {
+          label: 'Objetivo',
+          landing: 'Presentar y convertir',
+          website: 'Construir presencia digital',
+          app: 'Resolver procesos',
+        },
+        content: {
+          label: 'Contenido',
+          landing: 'Una página enfocada',
+          website: 'Múltiples páginas y contenidos',
+          app: 'Datos y funcionalidades',
+        },
+        interaction: {
+          label: 'Interacción',
+          landing: 'Básica',
+          website: 'Moderada',
+          app: 'Alta',
+        },
+        example: {
+          label: 'Ejemplo',
+          landing: 'Promoción o campaña',
+          website: 'Empresa o profesional',
+          app: 'Gestión, ventas o procesos',
+        },
+      },
+    },
+
+    cta: {
+      title: '¿Tenés una idea o un proceso para mejorar?',
+      description:
+        'Contame qué necesitás y podemos analizar juntos qué tipo de solución tiene sentido para tu proyecto.',
+      button: 'Hablemos de tu proyecto',
+    },
+
+    otherServices: {
+      eyebrow: 'Otros servicios',
+      title: 'También puedo ayudarte con',
+      view: 'Ver servicio',
+      landing: {
+        title: 'Landing Pages',
+        description: 'Páginas enfocadas en presentar una propuesta y generar una acción concreta.',
+      },
+      website: {
+        title: 'Sitios Web Profesionales',
+        description: 'Una presencia digital completa para negocios, profesionales y proyectos.',
+      },
+    },
+  },
 }
