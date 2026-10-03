@@ -401,7 +401,7 @@ const orderOnWhatsApp = (location: (typeof locations)[number]) => {
               </a>
 
               <a
-                :href="`https://wa.me/54${location.phone}`"
+                :href="`https://wa.me/54${location.phone}?text=${encodeURIComponent('Hola Parris Hilton, quiero hacer un pedido.')}`"
                 class="inline-flex items-center gap-2 rounded-xl border border-white/15 px-5 py-3 text-sm font-semibold transition hover:bg-white/10"
               >
                 <Phone class="h-4 w-4" />
