@@ -460,7 +460,7 @@ const orderOnWhatsApp = (location: (typeof locations)[number]) => {
             <button
               type="button"
               class="text-stone-400 transition hover:text-stone-900"
-              @click="selectedDish = null"
+              @click="showModal = false"
             >
               <X class="h-5 w-5" />
             </button>
