@@ -5,9 +5,13 @@ import {
   Flame,
   MapPin,
   MessageCircle,
+  PartyPopper,
   Phone,
+  ShoppingBag,
   Star,
+  Store,
   Utensils,
+  X,
 } from 'lucide-vue-next'
 
 const selectedDish = ref<string | null>(null)
