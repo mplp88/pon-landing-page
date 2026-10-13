@@ -44,7 +44,7 @@ const cards = [
 
         <h2 class="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
           {{ t('about.title.before') }}
-          <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          <span class="bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
             {{ t('about.title.highlight') }}
           </span>
         </h2>
@@ -59,7 +59,7 @@ const cards = [
         <article
           v-for="card in cards"
           :key="card.title"
-          class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.07]"
+          class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/4 p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.07]"
         >
           <!-- Decorative glow -->
           <div
